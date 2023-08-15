@@ -1,0 +1,30 @@
+.register-section{
+    margin: 300px;
+}
+
+.sign-up {
+    background-color: black;
+    color: aliceblue;
+    fill: #0079D3;
+    border-radius: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 24px;
+    text-transform: uppercase;
+    padding: 3px 16px;
+    opacity: 1;
+  }
+  .row{
+    margin-bottom: 10px;
+}
+.validationText{
+    font-size: 12px;
+}
+
+  /* .card-body{
+    height: 300px;
+  } */
