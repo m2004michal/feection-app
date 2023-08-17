@@ -1,0 +1,38 @@
+.login-section{
+    margin: 100px;
+}
+
+.login-failed{
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 65%;    
+    background-color: red;
+}
+
+.login-failed-text{
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;    
+    color: aliceblue;
+}
+
+.login{
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: larger;
+    box-sizing: border-box;
+    border-radius: 90px;
+    padding: 2px 12px;
+    box-shadow: black;
+}
+
+  .login-section{
+    margin: 300px;
+  }
