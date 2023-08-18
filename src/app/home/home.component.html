@@ -1,0 +1,38 @@
+<div class="reddit-body">
+    <div class="container">
+      <div class="row">
+        <hr />
+        <div class="col-md-9">
+          <!-- Display Posts-->
+          <div class="posts-table"></div>
+            <div class="row post" *ngFor="let post of posts$">
+                <!-- Section to Display Votes-->
+                <!-- Section to Display Post Information-->
+                    <div class="col-md-11">
+                    <span class="category-info">
+                        <span class="category-text"><a class="posturl" routerLink="">{{post.categoryName}}</a></span>
+                        <span> . Posted by <a class="username" routerLink="/user/{{post.username}}">{{post.username}}</a></span>
+                        <span> . {{post.createdDate}}</span>
+                    </span>
+                    <hr />
+                    <div class="post-title">
+                        <a class="postname" href="{{post.url}}">{{post.title}}</a>
+                    </div>
+                    <div>
+                        <p class="post-text">{{post.description}}</p>
+                    </div>
+            </div>
+              <hr />
+              <!-- <span>
+                <button class="login" (click)="goToPost(post.id)">
+                  Read Post
+                </button>
+              </span> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+      </div>
+    </div>
+  
