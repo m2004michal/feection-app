@@ -2,27 +2,47 @@
     <div class="container">
       <div class="row">
         <hr />
-        <div class="col-md-9">
+        <div class="col-md-12" style="margin-top: 200px;">
           <!-- Display Posts-->
-          <div class="posts-table"></div>
-            <div class="row post" *ngFor="let post of posts$">
-                <!-- Section to Display Votes-->
-                <!-- Section to Display Post Information-->
-                    <div class="col-md-11">
-                    <span class="category-info">
-                        <span class="category-text"><a class="posturl" routerLink="">{{post.categoryName}}</a></span>
-                        <span> . Posted by <a class="username" routerLink="/user/{{post.username}}">{{post.username}}</a></span>
-                        <span> . {{post.createdDate}}</span>
-                    </span>
-                    <hr />
-                    <div class="post-title">
-                        <a class="postname" href="{{post.url}}">{{post.title}}</a>
+          
+              <div  *ngFor="let post of posts$">
+                  <!-- Section to Display Post Information-->
+                    <div class="col-xl-3 col-lg-5 col-md-6 col-sm-12" >
+                      <span class="category-info">
+                          <span class="category-text"><a class="posturl" routerLink="">{{post.categoryName}}</a></span>
+                          
+                          <span> . {{post.createdDate}}</span>
+                      </span>
+                      
+                      <hr />
+
+
+
+                      <div class="post-block">
+                        <div class="post-title">
+                          <a class="postname" href="{{post.url}}">{{post.title}}</a>
+                        </div>
+                      <div>
+                      <div class="post-photo">
+                      </div>
+                      <hr />
+                      <div class="post-text-field">
+                        <div class="post-text">
+                          <span >Posted by: <a class="username" routerLink="/user/{{post.username}}">{{post.username}}</a></span>
+                          <br>
+                          <span class = "price" style="color: black">Price: {{post.price}}zł</span>
+                          <br>
+                          <span class="fee">Fee: {{post.fee}}zł</span>
+                        </div>
+                      </div> 
+                      
+
+                                  
                     </div>
-                    <div>
-                        <p class="post-text">{{post.description}}</p>
-                    </div>
-            </div>
-              <hr />
+
+
+              </div>
+      
               <!-- <span>
                 <button class="login" (click)="goToPost(post.id)">
                   Read Post
