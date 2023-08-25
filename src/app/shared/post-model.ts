@@ -1,3 +1,4 @@
+
 export class PostModel {
     id: number;
     title: string;
@@ -8,4 +9,5 @@ export class PostModel {
     categoryName: string;
     price: number;
     fee: number;
+    mainImage: Uint8Array;
 }

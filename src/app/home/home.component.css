@@ -13,11 +13,17 @@
     box-shadow: 1px 1px 1px 1px  lightgray;
 }
 
+.post-photo img{
+    height: 100%;
+    width: 100%;
+}
+
 
 .post-photo{
     background-color: lightblue;
     width: 250;
     height: 250px;
+
 }
 .post-text-field{
     text-decoration: none;
@@ -35,10 +41,22 @@
 .col-lg-3{
     float: left;
 }
+
+@media (max-width: 1199px) {
+    .post-photo{
+        height: 340px;
+    
+    }
+  }
+
 @media (max-width: 991px) {
     .col-sm-12{
         margin-left: 25%;
         max-width: 300px;
+    }
+    .post-photo{
+        height: 250px;
+    
     }
   }
   @media (max-width: 730px) {
@@ -53,6 +71,7 @@
 
     }
   }
+  
 
 /* .col-md-12{
     float: auto;
