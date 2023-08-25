@@ -19,17 +19,20 @@
 
 
                       <div class="post-block">
+
                         <div class="post-title">
-                          <a class="postname" href="{{post.url}}">{{post.title}}</a>
+                          <span class="postname"> {{post.title}}</span>
                         </div>
+
                       <div>
                       <div class="post-photo" >
                         <img class = "thumbnail" src="{{'data:image/jpg;base64,' + post.mainImage}}" />
                       </div>
                       <hr />
                       <div class="post-text-field">
+
                         <div class="post-text">
-                          <span >Posted by: <a class="username" routerLink="/user/{{post.username}}">{{post.username}}</a></span>
+                          <span >Posted by:  {{post.username}}</span>
                           <br>
                           <span class = "price" style="color: black">Price: {{post.price}}zł</span>
                           <br>

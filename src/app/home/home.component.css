@@ -13,14 +13,22 @@
     box-shadow: 1px 1px 1px 1px  lightgray;
 }
 
+.post-title{
+    text-align: center;
+}
+
 .post-photo img{
     height: 100%;
     width: 100%;
 }
 
+.thumbnail{
+    box-shadow: 1px 1px 1px 1px  lightgray;
+    border-radius: 25px;
+}
+
 
 .post-photo{
-    background-color: lightblue;
     width: 250;
     height: 250px;
 
