@@ -1,0 +1,91 @@
+.posts-table{
+    margin-top: 150px;
+}
+.post-block{
+    height: 500px;
+    min-width: 300px;
+    background-color: white;
+    font-size: larger;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border-width: 1px;
+    box-shadow: 1px 1px 1px 1px  lightgray;
+}
+
+.post-title{
+    text-align: center;
+}
+
+.post-photo img{
+    height: 100%;
+    width: 100%;
+}
+
+.thumbnail{
+    box-shadow: 1px 1px 1px 1px  lightgray;
+    border-radius: 25px;
+}
+
+
+.post-photo{
+    width: 250;
+    height: 250px;
+
+}
+.post-text-field{
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 1px 1px  lightgray;
+    border-radius: 25px;
+}
+.post-text{
+    margin-left: 30px;
+}
+.col-xl-3{
+    float: left;
+    margin-right: 7%;
+}
+.col-lg-3{
+    float: left;
+}
+@media (max-width: 1400px) {
+    .post-block{
+        min-width: 290px;
+        margin-right: 80px;
+    }
+  }
+
+@media (max-width: 1199px) {
+    .post-photo{
+        height: 340px;
+    
+    }
+    .post-block{
+        min-width: 330px;
+        min-height: 600px;
+    }
+  }
+
+@media (max-width: 991px) {
+    .col-sm-12{
+        margin-left: 25%;
+        max-width: 300px;
+    }
+    .post-photo{
+        height: 250px;
+    
+    }
+  }
+  @media (max-width: 730px) {
+    .col-sm-12{
+        margin-left: 20%;
+
+    }
+  }
+  @media (max-width: 500px) {
+    .col-sm-12{
+        margin-left: 10%;
+
+    }
+  }

@@ -13,6 +13,10 @@ import { NgxWebstorageModule } from 'ngx-webstorage';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';''
 import {ToastrModule} from 'ngx-toastr';
 import { HomeComponent } from './home/home.component';
+import { CreateCategoryComponent } from './category/create-category/create-category.component';
+import { CreatePostComponent } from './post/create-post/create-post.component';
+import { PostTileComponent } from './shared/post-tile/post-tile.component';
+import { CategoryListComponent } from './shared/category-list/category-list.component';
 
 
 @NgModule({
@@ -22,6 +26,10 @@ import { HomeComponent } from './home/home.component';
     SignUpComponent,
     LoginComponent,
     HomeComponent,
+    CreateCategoryComponent,
+    CreatePostComponent,
+    PostTileComponent,
+    CategoryListComponent,
   ],
   imports: [
     BrowserModule,
